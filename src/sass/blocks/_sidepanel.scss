@@ -1,6 +1,6 @@
 .sidepanel {
     position: fixed;
-    top: 340px;
+    top: 380px;
     left: -130px;
     display: flex;
     flex-direction: row-reverse;
@@ -10,11 +10,9 @@
     width: 340px;
     transform: rotate(-90deg);
     z-index: 3;
-    &__link img {
-        width: 18px;
-        height: 24px;
-
-    }
+    // &__link {
+        
+    // }
     &__divider {
         width: 70px;
         height: 2px;
@@ -22,6 +20,5 @@
     }
     &__text {
         font-size: 16px;
-        // font-weight: 700;
     }
 }
