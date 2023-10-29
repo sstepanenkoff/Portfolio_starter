@@ -1,8 +1,19 @@
 .promo {
     min-height: 100vh;
     position: relative;
-    background: url('../img/main_bg.jpg') no-repeat 50%/cover;
-    padding-top: 205px;
+    background: url('../img/temp_bg.png') no-repeat 50%/cover;
+    padding-top: 220px;
+    z-index: 1;
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 255, 255, 0.314); /* Черный цвет с 50% прозрачностью */
+    }
     &__title {
         width: 535px;
         margin-top: 10px;
@@ -21,13 +32,22 @@
         width: 240px;
     }
     &__link {
-        color: #000;
+        color: #ffffffec;
         font-weight: bold;
         font-size: 14px;
-        transition: 0.5s all;
+        transition: 0.3s all ease;
         &:hover {
-            color: #ffffffd4;
+            color: #e2e0e0;
             text-decoration: none;
+        }
+        &_recolor {
+            // color: $main-color;
+            color: #000000;
+            &:hover {
+                transform: translateY(-1.5px);
+                color: $main-color;
+            }
         }
     }
 }
+

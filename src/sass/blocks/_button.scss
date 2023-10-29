@@ -3,9 +3,10 @@
     background: $main-color;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     padding: 10px 30px;
-    border-radius: 1px;
-    transition: 0.5s all;
+    border-radius: 2px;
+    transition: 0.4s all;
+    color: #000000ec;
     &:hover {
-        color: #ffffffd4;
+        color: #ffffff;
     }
 }

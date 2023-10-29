@@ -1,7 +1,7 @@
 .sidepanel {
     position: fixed;
-    top: 380px;
-    left: -130px;
+    top: 395px;
+    left: -115px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -10,15 +10,25 @@
     width: 340px;
     transform: rotate(-90deg);
     z-index: 3;
-    // &__link {
-        
-    // }
+    &__link {
+        svg {
+            // fill: #e2e0e0;
+            fill: black;
+            transition: .2s all;
+            &:hover {
+                rotate: 90deg;
+            }
+        }
+    }
     &__divider {
         width: 70px;
         height: 2px;
-        background-color: #000;
+        // background-color: #e2e0e0;
+        background-color: #000000;
     }
     &__text {
         font-size: 16px;
+        // color: #e2e0e0;
+        color: #000000;
     }
 }
