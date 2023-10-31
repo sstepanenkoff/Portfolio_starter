@@ -1,9 +1,10 @@
 .btn {
-    height: 42px;
+    width: 135px;
+    height: 44px;
+    text-align: center;
+    padding: 12px 0 12px 0;
     background: $main-color;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    padding: 10px 30px;
-    border-radius: 2px;
     transition: 0.4s all;
     color: #000000ec;
     &:hover {
